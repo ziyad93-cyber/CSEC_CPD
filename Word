@@ -1,0 +1,17 @@
+word = input()  # Input the word
+uppercase_letters = []
+lowercase_letters = []
+
+for letter in word:
+    if letter.isupper(): 
+        uppercase_letters.append(letter)
+    elif letter.islower(): 
+        lowercase_letters.append(letter)
+
+num_uppercase = len(uppercase_letters)
+num_lowercase = len(lowercase_letters)
+
+if num_uppercase < num_lowercase or num_uppercase == num_lowercase:
+    print(word.lower())  
+else:
+    print(word.upper()) 
